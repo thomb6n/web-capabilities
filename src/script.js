@@ -36,3 +36,24 @@ function updateOrientation() {
 }
 
 updateOrientation();
+
+// Web Share API
+const shareButton = document.getElementById("share-button");
+shareButton.onclick = () => {
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "Web Capabilities Repository",
+        text: "Sent with the Web Share API",
+        url: "https://github.com/thomb6n/web-capabilities",
+      })
+      .then(() => {
+        console.log("Shared successfully.");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  } else {
+    console.log("The Web Share API is not supported in your browser.");
+  }
+};
