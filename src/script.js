@@ -26,3 +26,13 @@ function getLocation() {
 }
 
 getLocationButton.onclick = getLocation;
+
+// Screen Orientation API
+const orientationSpan = document.getElementById("orientation");
+
+function updateOrientation() {
+  const currentOrientation = screen.orientation;
+  orientationSpan.textContent = currentOrientation.type;
+}
+
+updateOrientation();
