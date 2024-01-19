@@ -1,0 +1,21 @@
+{
+  "name": "web-capabilities",
+  "version": "1.0.0",
+  "description": "This repository just has some code I wrote and experimented with while loosely following [Maximiliano teaching a course on Frontend Masters](https://frontendmasters.com/courses/device-web-apis/).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "jest": "^29.7.0",
+    "parcel": "^2.11.0",
+    "prettier": "^3.2.4"
+  }
+}
