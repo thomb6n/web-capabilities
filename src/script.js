@@ -47,12 +47,7 @@ shareButton.onclick = () => {
         text: "Sent with the Web Share API",
         url: "https://github.com/thomb6n/web-capabilities",
       })
-      .then(() => {
-        console.log("Shared successfully.");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((err) => console.log(err));
   } else {
     console.log("The Web Share API is not supported in your browser.");
   }
