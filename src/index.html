@@ -1,11 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Capabilities</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1>Web Capabilities</h1>
+    </header>
+
+    <main>
+      <section class="web-capability">
+        <h2>Geolocation API</h2>
+        <ul>
+          <li>Needs user permission</li>
+          <li>Works only in the foreground</li>
+          <li>It relies on the browser or operating system service</li>
+        </ul>
+        <p id="location"></p>
+        <button id="get-location">Get my location</button>
+      </section>
+    </main>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
